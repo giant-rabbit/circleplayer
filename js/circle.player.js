@@ -27,9 +27,8 @@
  * Mark Panaghiston @thepag
  * Louis-Rémi Babé @Louis_Remi
  */
-
-
-var CirclePlayer = function(jPlayerSelector, media, options) {
+(function($) {
+CirclePlayer = function(jPlayerSelector, media, options) {
 	var	self = this,
 
 		defaults = {
@@ -241,3 +240,4 @@ CirclePlayer.prototype = {
 		this.player.jPlayer("destroy");
 	}
 };
+})(jQuery);
